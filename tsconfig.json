@@ -1,0 +1,35 @@
+{
+	"extends": "./.svelte-kit/tsconfig.json",
+	"compilerOptions": {
+		"allowJs": true,
+		"checkJs": true,
+		"esModuleInterop": true,
+		"forceConsistentCasingInFileNames": true,
+		"allowImportingTsExtensions": true,
+		"resolveJsonModule": true,
+		"skipLibCheck": true,
+		"sourceMap": true,
+		"strict": true,
+		"target": "esnext",
+		"module": "esnext",
+		"moduleResolution": "bundler",
+		"jsx": "preserve",
+		"preserveSymlinks": true,
+		"ignoreDeprecations": "5.0",
+		"lib": ["esnext", "es5", "es6", "dom", "dom.iterable"],
+		"types": ["vite/client"]
+	},
+	"include": [
+		"index.d.ts",
+		"src/**/*.ts",
+		"src/env.d.ts",
+		"src/app.d.ts",
+		"src/**/*.svelte",
+		"src/main.ts",
+		"types/**/*.ts",
+		"test/**/*.ts",
+		".svelte-kit/ambient.d.ts",
+		".svelte-kit/types/**/$types.d.ts"
+	],
+	"exclude": ["**/node_modules/*", ".vercel/", ".turbo/"]
+}
